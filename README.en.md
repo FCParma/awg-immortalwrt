@@ -20,7 +20,7 @@ apk add --allow-untrusted kmod-amneziawg.apk amneziawg-tools.apk luci-proto-amne
 
 ---
 
-## 🛠 Option 2: Build for your router and your kernel version (For other models)
+## 🛠 Option 2: Build for your router and your kernel version (for other models)
 If you have a different firmware version or a different processor, you can build the package for free directly on GitHub servers in a few minutes:
 
 1. Make a **Fork** (copy) of this repository to your account.
