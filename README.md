@@ -10,7 +10,12 @@
 Просто зайдите по SSH на роутер, скопируйте команду ниже, вставьте в консоль роутера и нажмите **Enter**:
 
 ```bash
-cd /tmp && wget https://github.com/FCParma/awg-immortalwrt/releases/download/v25.12.2/kmod-amneziawg_v25.12.2_mipsel_24kc_ramips_mt7621.apk && wget https://github.com/FCParma/awg-immortalwrt/releases/download/v25.12.2/amneziawg-tools_v25.12.2_mipsel_24kc_ramips_mt7621.apk && wget https://github.com/FCParma/awg-immortalwrt/releases/download/v25.12.2/luci-proto-amneziawg_v25.12.2_all.apk && wget https://github.com/FCParma/awg-immortalwrt/releases/download/v25.12.2/luci-i18n-amneziawg-ru_v25.12.2_all.apk && apk add --allow-untrusted *amneziawg*.apk
+cd /tmp && \
+wget -O kmod-amneziawg.apk https://github.com/FCParma/awg-immortalwrt/releases/download/v25.12.2/kmod-amneziawg_v25.12.2_mipsel_24kc_ramips_mt7621.apk && \
+wget -O amneziawg-tools.apk https://github.com/FCParma/awg-immortalwrt/releases/download/v25.12.2/amneziawg-tools_v25.12.2_mipsel_24kc_ramips_mt7621.apk && \
+wget -O luci-proto-amneziawg.apk https://github.com/FCParma/awg-immortalwrt/releases/download/v25.12.2/luci-proto-amneziawg_v25.12.2_mipsel_24kc_ramips_mt7621.apk && \
+wget -O luci-i18n-amneziawg-ru.apk https://github.com/FCParma/awg-immortalwrt/releases/download/v25.12.2/luci-i18n-amneziawg-ru_v25.12.2_mipsel_24kc_ramips_mt7621.apk && \
+apk add --allow-untrusted kmod-amneziawg.apk amneziawg-tools.apk luci-proto-amneziawg.apk luci-i18n-amneziawg-ru.apk
 ```
 
 ---
